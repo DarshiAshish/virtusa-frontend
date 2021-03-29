@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<style>
+    h1 {text-align: center;}
+
+</style>
+
+<h1 >
+    Sign Up
+</h1>
+<div>
+    <h1>{{message}}</h1>
+</div>
+<form>
+    <div class="formsign">
+    <div>
+        <input type="email"  name="userEmail" placeholder="Enter Email" class="textfields"  [(ngModel)]="userEmail">
+    </div>
+    <br>
+    <div>
+        <input type="text" name="userName" placeholder="Enter UserName" class="textfields" [(ngModel)]="userName">
+    </div>
+<br>
+<div>
+    <input type="number"  name="mobileNumber" placeholder="Enter MobileNumber" class="textfields" [(ngModel)]="mobileNumber">
+</div>
+<br> <div>
+    <input type="password"  name="password" placeholder="Enter Password" class="textfields" [(ngModel)]="password">
+</div>
+<br> <div>
+    <input type="password"  name="confirmPassword" placeholder="Confirm password" class="textfields" [(ngModel)]="confirmPassword">
+</div>
+<br>
+<button type="button" class="btn btn-primary" (click)="signIn()" >Submit</button> <br>
+Already user?<button type="button" class="btn" (click)="goTo()">login</button>
+</div>
+
+</form>
